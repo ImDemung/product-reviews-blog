@@ -6,17 +6,20 @@ export default function ProductCard({ product, theme }) {
   return (
     <main className="product-card-container">
       <div className="product-card">
-        <img src={product.image} alt={`Image of ${product.name}`} />
+        <img src={product.image} alt={`Изображение ${product.name}`} />
         <div className="product-card-info">
-          <p>{product.name}</p><br />
-          <p>
-            Оценка: {product.rating}/10 {stars}
-          </p><br />
-          <p>{product.info}</p>
+          <h1 className="product-title">{product.name}</h1>
+          <div className="product-rating-box">
+            Оценка: {product.rating}/10 <span className="stars-text">{stars}</span>
+          </div>
+          <div className="product-info-text">
+            <p>{product.info}</p>
+          </div>
         </div>
       </div>
       <div className="product-card-review">
-        <p>{product.review}</p>
+        <h2 className="review-title">Мнение автора</h2>
+        <p className="review-text">{product.review}</p>
       </div>
     </main>
   );
