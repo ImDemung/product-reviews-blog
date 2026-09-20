@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function NavButton({ label, color, onClick }) {
+export default function NavButton({ label, onClick, className }) {
   return (
-    <button className="nav-btn" onClick={onClick} style={{ "--product-text-color": color }}>
+    <button onClick={onClick} className={className} type="button">
       {label}
     </button>
   );

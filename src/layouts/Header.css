@@ -1,0 +1,146 @@
+.header-container {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  border-bottom: solid 2px #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-nav {
+  width: 725px;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.header-nav-buttons {
+  width: 340px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-buttons a {
+  text-decoration: none;
+  width: 50%;
+  height: 100%;
+}
+
+.header-nav-buttons a button {
+  width: 100%;
+}
+
+.header-nav-buttons button {
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+}
+
+.header-nav-buttons button:hover {
+  color: #666;
+}
+
+.header-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 100%;
+}
+
+.header-search input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.header-search input:focus {
+  border-color: #666;
+}
+
+.header-search button {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.header-search button:hover {
+  color: #666;
+}
+
+.header-search input[type="search"]::-webkit-search-cancel-button,
+.header-search input[type="search"]::-webkit-search-decoration,
+.header-search input[type="search"]::-webkit-search-results-button,
+.header-search input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.header-hero {
+  width: 725px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.header-menu {
+  width: calc(50vw - 725px + 170px);
+  height: calc(100vh - 100px);
+  background-color: #fff;
+  border-right: 2px solid #666;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu.open {
+  transform: translateX(0);
+}
+
+.header-menu-categories {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-menu-category button {
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.header-menu-category button:hover {
+  color: #666;
+}
+
+.header-menu-category.active button {
+  color: #666;
+}
