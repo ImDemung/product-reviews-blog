@@ -74,3 +74,55 @@
   text-align: center;
   font-size: 20px;
 }
+
+@media (max-width: 768px) {
+  
+  .product-card-container {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .product-card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 25px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .product-info {
+    gap: 20px;
+  }
+
+  .product-card h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .product-card p {
+    font-size: 16px;
+  }
+
+  .product-rating-box {
+    font-size: 18px;
+    gap: 10px;
+  }
+  .product-card-container section {
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  .product-card-container section h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .product-card-container section p {
+    font-size: 16px;
+  }
+}
