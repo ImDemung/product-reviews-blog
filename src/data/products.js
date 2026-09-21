@@ -2,6 +2,9 @@ import img_bolzhau_crab_chips from "../assets/bolzhau_crab_chips.webp";
 import img_chipsony_crab_chips from "../assets/chipsony_crab_chips.webp";
 import img_pavlodar_lemonade_drinks from "../assets/pavlodar_lemonade_drinks.webp";
 import img_holiday_lemonade_drinks from "../assets/holiday_lemonade_drinks.webp";
+import img_slang_lobster_chips from "../assets/slang_lobster_chips.webp";
+import img_snickers_classic_chocolate from "../assets/snickers_classic_chocolate.webp";
+import img_snickers_hazelnut_chocolate from "../assets/snickers_hazelnut_chocolate.webp";
 
 export const PRODUCTS_DATA = [
   {
@@ -10,7 +13,7 @@ export const PRODUCTS_DATA = [
     category: "chips",
     categoryLabel: "Чипсы",
     image: img_bolzhau_crab_chips,
-    rating: 8,
+    rating: 9,
     info: `Легкие воздушные чипсы
     Из нецельного картофеля 
     В форме крабиков
@@ -60,7 +63,7 @@ export const PRODUCTS_DATA = [
     category: "drinks",
     categoryLabel: "Напитки",
     image: img_holiday_lemonade_drinks,
-    rating: 7,
+    rating: 6,
     info: `Сладкий газированный лимонад 
     По итальянской лицензии Bevanda Premium Limonada
     Необычный привкус с нотками цитрусовых
@@ -70,6 +73,57 @@ export const PRODUCTS_DATA = [
     Энергетическая ценность: 
     190 кДж/45 ккал`,
     review: `Красивый дизайн бутылки. Необычный вкус, но быстро надоедает. Сильно газированный. Рекомендую для компании, так как вкус быстро приедается.`,
+  },
+  {
+    id: 5,
+    name: "Шоколадный батончик «Snickers» классический",
+    category: "chocolate",
+    categoryLabel: "Шоколад",
+    image: img_snickers_classic_chocolate,
+    rating: 8,
+    info: `Молочный шоколад
+    Тягучая карамель и жареный арахис
+    Нежная молочная нуга
+
+    Пищевая ценность на 100 г:
+    Белки 8,1 г Жиры 25 г Углеводы 59 г
+    Энергетическая ценность:
+    2068 кДж/494 ккал`,
+    review: `Всеми известный батончик. Молочный шоколад и сладкая нуга хорошо сочетаются с соленым арахисом и карамелью. Рекомендую как хороший батончик для перекуса.`,
+  },
+  {
+    id: 6,
+    name: "Чипсы волнистые «SLANG» Средиземноморский лобстер",
+    category: "chips",
+    categoryLabel: "Чипсы",
+    image: img_slang_lobster_chips,
+    rating: 7,
+    info: `Из натурального картофеля
+    Глубокий волнистый срез
+    Вкус лобстера и пряностей
+
+    Пищевая ценность на 100 г:
+    Белки 4,6 г Жиры 35,2 г Углеводы 50,0 г
+    Энергетическая ценность:
+    2331 кДж/535 ккал`,
+    review: `Казахстанский бренд из Алматинской области, который ничем не уступает Lays. Рифленая форма делает их очень хрустящими и хорошо держит специи. Вкус лобстера насыщенный, с приятной сладковато ноткой. Рекомендую как чипсы из цельного картофеля.`,
+  },
+  {
+    id: 7,
+    name: "Шоколадный батончик «Snickers» с лесным орехом",
+    category: "chocolate",
+    categoryLabel: "Шоколад",
+    image: img_snickers_hazelnut_chocolate,
+    rating: 6,
+    info: `Молочный шоколад
+    Яркий вкус лесного ореха
+    Густая карамель и молочная нуга
+
+    Пищевая ценность на 100 г:
+    Белки 8,1 г Жиры 27,4 г Углеводы 56 г
+    Энергетическая ценность:
+    2119 кДж/506 ккал`,
+    review: `Ярко выраженный вкус фундука и соленая карамель образуют приятный послевкусие. Молочная нуга почти не чувствуется. Рекомендую если хотите приятный вкус фундука и карамели.`,
   },
 ];
 

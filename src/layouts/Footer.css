@@ -7,9 +7,10 @@
   font-size: 20px;
   font-weight: 700;
   gap: 50px;
-  background-color: #fff;
-  border-top: solid 2px #666;
+  background-color: #84c5b1;
+  border-top: solid 2px #1F150C;
   z-index: 100;
+  color: #1F150C;
 }
 
 .footer-container a {
@@ -17,11 +18,11 @@
   align-items: center;
   justify-content: center;
   transition: color 0.3s ease;
-  color: #000;
+  color: #1F150C;
 }
 
 .footer-container a:hover {
-  color: #666;
+  color: #f0e9b6;
 }
 
 @media (max-width: 768px) {

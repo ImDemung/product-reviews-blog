@@ -33,10 +33,10 @@ export default function Header() {
     <header className="header-container">
       <nav className="header-nav">
         <div className="header-nav-buttons">
+          <NavButton label="Меню категорий" onClick={toggleCategoriesMenu} />
           <Link to="/">
             <NavButton label="Каталог" />
           </Link>
-          <NavButton label="Категории" onClick={toggleCategoriesMenu} />
         </div>
 
         <form
