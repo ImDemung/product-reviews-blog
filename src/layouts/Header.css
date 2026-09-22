@@ -1,34 +1,31 @@
 .header-container {
   width: 100%;
   height: 100px;
-  background-color: #84c5b1;
-  color: #1f150c;
-  border-bottom: solid 2px #1f150c;
+  background-color: #fff;
+  color: #000;
+  border-bottom: solid 2px #000;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .header-nav {
-  width: 725px;
+  width: 40%;
   height: 100%;
   display: flex;
-  gap: 30px;
 }
 
 .header-nav-buttons {
-  width: 340px;
+  width: 50%;
   height: 100%;
   display: flex;
-  align-items: center;
 }
 
 .header-nav-buttons a {
   text-decoration: none;
-  width: 50%;
+  width: 40%;
   height: 100%;
 }
 
@@ -37,46 +34,42 @@
 }
 
 .header-nav-buttons button {
-  width: 50%;
+  width: 60%;
   height: 100%;
   font-size: 20px;
   background-color: transparent;
   border: none;
   font-weight: 700;
-  color: #1f150c;
+  color: #000;
   transition: color 0.3s ease;
 }
 
 .header-nav-buttons button:hover {
-  color: #f0e9b6;
+  opacity: 0.6;
 }
 
 .header-search {
   position: relative;
   display: flex;
   align-items: center;
-  width: 340px;
+  width: 50%;
   height: 100%;
 }
 
 .header-search input {
   width: 100%;
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 20px;
-  border: 2px solid #1f150c;
-  color: #1f150c;
+  border: 2px solid #000;
+  color: #000;
   border-radius: 25px;
   outline: none;
   transition: border-color 0.3s ease;
-  background-color: #accfa3;
-}
-
-.header-search input:focus {
-  border-color: #f0e9b6;
+  background-color: #fff;
 }
 
 .header-search button {
-  color: #1f150c;
+  color: #000;
   position: absolute;
   right: 20px;
   background: transparent;
@@ -89,7 +82,7 @@
 }
 
 .header-search button:hover {
-  color: #f0e9b6;
+  opacity: 0.6;
 }
 
 .header-search input[type="search"]::-webkit-search-cancel-button,
@@ -101,20 +94,20 @@
 }
 
 .header-hero {
-  width: 725px;
+  width: 40%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 24px;
+  justify-content: center;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .header-menu {
-  width: calc(50vw - 725px + 170px);
+  width: 22%;
   height: auto;
-  background-color: #84c5b1;
-  border-right: 2px solid #1f150c;
+  background-color: #fff;
+  border-right: 2px solid #000;
   position: absolute;
   top: 100px;
   left: 0;
@@ -131,7 +124,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-bottom: 2px solid #1f150c;
+  border-bottom: 2px solid #000;
 }
 
 .header-menu-category button {
@@ -143,60 +136,64 @@
   cursor: pointer;
   transition: color 0.3s ease;
   font-weight: 700;
-  color: #1f150c;
+  color: #000;
 }
 
 .header-menu-category button:hover {
-  color: #f0e9b6;
+  opacity: 0.6;
 }
 
 .header-menu-category.active button {
-  color: #f0e9b6;
+  opacity: 0.6;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  
   .header-container {
-    height: 125px;
-    position: relative;
-  }
-
-  .header-nav {
-    width: 100%;
-    height: auto;
+    height: 120px;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-  }
-
-  .header-nav-buttons {
-    width: 100%;
-    height: 40px;
-  }
-
-  .header-nav-buttons button {
-    font-size: 16px;
-  }
-
-  .header-search {
-    width: 100%;
-    height: 40px;
-  }
-
-  .header-search input {
-    font-size: 16px;
+    align-items: center;
+    position: relative;
   }
 
   .header-hero {
     display: none;
   }
 
+  .header-nav {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .header-search {
+    width: 90%;
+    height: 30px;
+  }
+
+  .header-search input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .header-nav-buttons {
+    width: 100%;
+    height: 50px;
+  }
+
+  .header-nav-buttons button {
+    font-size: 16px;
+  }
+
   .header-menu {
     width: 100%;
-    top: 125px;
-    height: auto;
+    top: 120px;
+    border-right: none;
   }
 
   .header-menu-category button {
     font-size: 16px;
+    text-align: left;
   }
 }

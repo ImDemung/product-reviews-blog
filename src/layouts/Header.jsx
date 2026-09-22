@@ -58,7 +58,7 @@ export default function Header() {
       </nav>
 
       <div className="header-hero">
-        <p>Мини-блог с обзорами о разнообразных продуктах</p>
+        <p>Блог с обзорами о разнообразных продуктах</p>
       </div>
 
       <div

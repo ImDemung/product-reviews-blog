@@ -7,10 +7,10 @@
   font-size: 20px;
   font-weight: 700;
   gap: 50px;
-  background-color: #84c5b1;
-  border-top: solid 2px #1F150C;
   z-index: 100;
-  color: #1F150C;
+  background-color: #fff;
+  color: #000;
+  border-top: solid 2px #000;
 }
 
 .footer-container a {
@@ -18,18 +18,21 @@
   align-items: center;
   justify-content: center;
   transition: color 0.3s ease;
-  color: #1F150C;
+  color: #000;
 }
 
 .footer-container a:hover {
-  color: #f0e9b6;
+  opacity: 0.6;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  
   .footer-container {
-    height: 80px;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
     font-size: 16px;
-    gap: 20px;
-    padding: 0 20px;
+    padding: 20px 0;
   }
 }
